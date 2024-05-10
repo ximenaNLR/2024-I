@@ -9,7 +9,7 @@ public class Git {
         int a = 4;
         int b = 6;
         int total = a+b;
-        System.out.println(total);
+        System.out.println(total+"hola");
     }
     
 }
