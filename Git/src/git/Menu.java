@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 public class Menu {
-
+ 
    public static Scanner sc = new Scanner(System.in);
    public static bibllioteca biblio= new bibllioteca();
    public static Reproductor reproducir = new Reproductor();
@@ -28,13 +28,13 @@ public class Menu {
                reproducir.reproducirCanciones();
                break;
            case 5:
-               reproducir.pausarYReundarLaReproduccion();
+               reproducir.PausarYReaundar();
                break;
            case 6:
-               reproducir.avanzarYRetrocederEnLaCancion();
+               reproducir.AvanzarYRetroceder();
                break;
            case 7:
-               reproducir.controlarElVolumen();
+               reproducir.controlarVolumen();
                break;
            case 8:
                reproducir.salirDeAplicacion();
@@ -42,6 +42,7 @@ public class Menu {
             default:
        }
         }while(opc!=8);
+        
         }
     public static void Menu(){
         System.out.println("¡Bienvenido/a!");
@@ -55,4 +56,5 @@ public class Menu {
         System.out.println("7. Controlar el volumen");
         System.out.println("8. Salir de la aplicación "); 
     }  
+  
 }
